@@ -12,9 +12,10 @@ function Main() {
   const [powerPrice, setPowerPrice] = useState<number>(0);
   const [drivePrice, setDrivePrice] = useState<number>(0);
   const [packagePrice, setPackagePrice] = useState<number>(0);
+  const [colorName, setColorName] = useState('Snow'); 
 
   return (
-      <PriceContext.Provider value={{ colorPrice, setColorPrice, powerPrice, setPowerPrice, drivePrice, setDrivePrice, packagePrice, setPackagePrice }}>
+      <PriceContext.Provider value={{ colorPrice, setColorPrice, powerPrice, setPowerPrice, drivePrice, setDrivePrice, packagePrice, setPackagePrice, colorName, setColorName  }}>
           <main>
               <div className="column">
                   <Color />

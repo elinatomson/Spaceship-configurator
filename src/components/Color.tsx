@@ -16,10 +16,12 @@ function Color() {
 
     const [selectedColor, setSelectedColor] = useState(colorOptions[0]);
     const { setColorPrice } = usePrice();
+    const { setColorName } = usePrice();
 
     const handleColorChange = (color: ColorOption) => {
         setSelectedColor(color);
         setColorPrice(color.price);
+        setColorName(color.name);
     };
 
     return (

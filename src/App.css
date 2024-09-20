@@ -528,3 +528,8 @@ button {
   width: 302px;
   height: 257px;
 }
+
+.snow {
+  width: 100%; /* Scale to fit width */
+  height: 100%; /* Scale to fit height */
+}

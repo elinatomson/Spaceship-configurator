@@ -10,7 +10,8 @@ interface PriceContextType {
     setDrivePrice: (price: number) => void;
     packagePrice: number;
     setPackagePrice: (price: number) => void;
-
+    colorName: string; 
+    setColorName: (color: string) => void; 
 }
 
 // Create the context with a default value
