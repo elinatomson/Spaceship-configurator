@@ -487,14 +487,34 @@ hr {
 }
 
 button {
-  display: flex;
+  display: inline-flex;
   padding: 12px 20px;
   justify-content: center;
   align-items: center;
   gap: 4px;
   border-radius: 999px;
-  background: #008834;
-  border: 0;
+  background: #008834; 
+  width: 151px;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  display: inline-flex;
+  background: #007E30;
+}
+
+button:active {
+  background: #006527;
+}
+
+button:focus-visible {
+  outline: 4px solid #F6F7FA;
+  outline-offset: -8px;   
+  padding: 12px 20px;
+  border: 4px solid black;
+  border-radius: 999px;
+  width: 159px;
 }
 
 .checkout-label {
@@ -507,7 +527,7 @@ button {
 .checkout-text {
   color: #FFF;
   text-align: center;
-  align-self: center;
+  width: 75px;
 }
 
 .checkout-icon {

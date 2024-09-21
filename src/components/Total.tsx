@@ -44,10 +44,10 @@ function Total() {
                     <div className="text checkout-text">
                         Checkout
                     </div>
+                </div>
                     <div className='checkout-icon'>
                         <img src={arrow} alt="Arrow" className="checkout-arrow"/>
                     </div>
-                </div>
             </button>
         </div>
     );
