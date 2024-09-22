@@ -10,7 +10,7 @@ function Power() {
     const powerOptions: PowerOption[] = [
         { name: '100 MW', price: 0},
         { name: ' ', price: 150},
-        { name: '200MW', price: 200},
+        { name: '200 MW', price: 200},
     ];
 
     const [selectedPower, setSelectedPower] = useState(powerOptions[1]);

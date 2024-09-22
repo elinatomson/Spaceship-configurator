@@ -30,15 +30,17 @@ function Color() {
         <div className="options color-options">
             {colorOptions.map((color) => (
                 <div key={color.name} className={`option ${selectedColor.name === color.name ? 'selected' : ''}`} onClick={() => handleColorChange(color)}>
-                    <div className="color-container">
-                        <div className={`rectangle ${color.color}`}></div>
-                    </div>
-                    <div className="color-textbox">
-                        <div className="text option-text">
-                            {color.name}
+                    <div className="rectangle-text-container">
+                        <div className="color-container">
+                            <div className={`rectangle ${color.color}`}></div>
                         </div>
-                        <div className="price">
-                            {`+${color.price}€`}
+                        <div className="color-textbox">
+                            <div className="text option-text">
+                                {color.name}
+                            </div>
+                            <div className="price">
+                                {`+${color.price}€`}
+                            </div>
                         </div>
                     </div>
                 </div>
