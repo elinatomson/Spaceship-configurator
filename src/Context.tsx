@@ -1,6 +1,6 @@
 import { createContext, useContext } from 'react';
 
-// Define the type for the context
+// Defining the type for the context
 interface PriceContextType {
     colorPrice: number;
     setColorPrice: (price: number) => void;
@@ -14,10 +14,10 @@ interface PriceContextType {
     setColorName: (color: string) => void; 
 }
 
-// Create the context with a default value
+// Creating the context with a default value
 export const PriceContext = createContext<PriceContextType | undefined>(undefined);
 
-// Create a custom hook for using the context
+// Creating a custom hook for using the context
 export const usePrice = () => {
     const context = useContext(PriceContext);
     if (context === undefined) {

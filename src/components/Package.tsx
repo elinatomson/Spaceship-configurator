@@ -29,16 +29,18 @@ function Package() {
         <div className="options">
             {packageOptions.map((advanced) => (
                 <div key={advanced.name} className={`option ${selectedPackage.name === advanced.name ? 'selected' : ''}`} onClick={() => handlePackageChange(advanced)}>
-                    <div className="package-text">
-                        <div className="text option-text">
-                            {advanced.name}
-                        </div>
-                        <div className="price">
-                            {`+${advanced.price}€`}
+                    <div className="rectangle-text-container">
+                        <div className="package-text">
+                            <div className="text option-text">
+                                {advanced.name}
+                            </div>
+                            <div className="price">
+                                {`+${advanced.price}€`}
+                            </div>
                         </div>
                     </div>
-                    <div key={advanced.name} className={`advanced-options ${selectedPackage.name === advanced.name ? 'selected' : ''}`}>
-                        <div className="advanced-option">
+                    <div className={`advanced-options ${selectedPackage.name === advanced.name ? 'selected' : ''}`}>
+                        <div className={`advanced-option ${advanced.name === 'Lux'? 'third' : ''}`}>
                             {advanced.description.map((item, index) => (
                                 <div key={index} className="single-option">
                                     <div className="option-icon">
