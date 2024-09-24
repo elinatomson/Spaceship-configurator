@@ -8,8 +8,8 @@ function Drive() {
     };
 
     const driveOptions: DriveOption[] = [
-        { name: 'No', price: 0 },
-        { name: 'Yes', price: 1000 },
+        { name: 'NO', price: 0 },
+        { name: 'YES', price: 1000 },
     ];
 
     const [selectedDrive, setSelectedDrive] = useState(driveOptions[0]);
