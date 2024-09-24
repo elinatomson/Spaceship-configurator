@@ -19,19 +19,19 @@ function Total() {
                 </div>
                 <div className="total-row">
                     <div className="text total-text">Color:</div>
-                    <div className="total-price">{colorPrice}€</div>
+                    <div className="total-price">+{colorPrice}€</div>
                 </div>
                 <div className="total-row">
                     <div className="text total-text">Power:</div>
-                    <div className="total-price">{powerPrice}€</div>
+                    <div className="total-price">+{powerPrice}€</div>
                 </div>
                 <div className="total-row">
                     <div className="text total-text">Warp drive:</div>
-                    <div className="total-price">{drivePrice}€</div>
+                    <div className="total-price">+{drivePrice}€</div>
                 </div>
                 <div className="total-row">
                     <div className="text total-text">Option package:</div>
-                    <div className="total-price">{packagePrice}€</div>
+                    <div className="total-price">+{packagePrice}€</div>
                 </div>
                 <hr/>
                 <div className="total">

@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# Spaceship Configurator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project implements a spaceship purchase configurator according to given design and reqired functions. The primary goal of this app is to provide users with an interactive and engaging way to configure and price their spaceship.
 
-Currently, two official plugins are available:
+## Technologies Used
+- TypeScript
+- React.js
+- CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Real-time price calculation that reflects chosen configurations such as power, warp drive, and additional options.
+- Dynamic spaceship image updates based on selected color.
+- Responsive design, optimized for two screen sizes: 1440px and 375px.
 
-## Expanding the ESLint configuration
+## Running the Project via Terminal
+  - You need to have Node.js installed on your system. If it's not installed, you can download it from [Node.js](https://nodejs.org/en). I was using Node.js v22.5.1 for this project.
+  - npm(Node Package Manager) comes bundled with Node.js, so you should have it installed already.
+  - In your terminal, navigate to the project directory and run "npm install".
+  - After installing the dependencies, start the development server by typing "npm run dev".
+  - Open your browser and navigate to http://localhost:5173 to view the app. While creating the project I was mainly using Google Chrome as a browser.
+  - To stop the development server, press Ctrl + C in your terminal.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Author
+- [Elina Tomson](https://github.com/elinatomson)

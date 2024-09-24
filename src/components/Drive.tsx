@@ -21,7 +21,7 @@ function Drive() {
     };
 
     return (
-      <form className="drive">
+      <div className="drive">
         <div className="text select-text">Warp drive:</div>
         <div className="options">
             {driveOptions.map((drive) => (
@@ -37,7 +37,7 @@ function Drive() {
                 </div>
             ))}
         </div>
-      </form>
+      </div>
     );
   };
   

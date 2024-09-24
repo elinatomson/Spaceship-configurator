@@ -25,7 +25,7 @@ function Color() {
     };
 
     return (
-      <form className="color">
+      <div className="color">
         <div className="text select-text">Select color:</div>
         <div className="options color-options">
             {colorOptions.map((color) => (
@@ -46,7 +46,7 @@ function Color() {
                 </div>
             ))}
         </div>
-      </form>
+      </div>
     );
   };
   

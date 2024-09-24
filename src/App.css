@@ -1,9 +1,9 @@
 /*---------- Overall design ----------*/
 
 body {
-  width: 1440px;
-  padding: 0;
-  margin: 0;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
   background-color: #EDEEF1;
 }
 
@@ -12,12 +12,9 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: 944px;
-  margin-top: 38px;
-  margin-left: 248px;
   border-radius: 8px;
   border: 1px solid #DFE0E3;
   background-color: #F6F7FA;
-  border-radius: 8px
 }
 
 @media (max-width: 375px) {
@@ -314,7 +311,7 @@ main {
   align-self: stretch;
 }
 
-label {
+.label {
   display: flex;
   align-items: flex-start;
   gap: 4px;
@@ -649,6 +646,7 @@ hr {
   height: 2px;
   background: #DFE0E3;
   border: none;
+  margin: 0;
 }
 
 .total {
@@ -657,8 +655,6 @@ hr {
   align-items: center;
   gap: 80px;
   align-self: stretch;
-  position: sticky;
-  bottom: 0;
 }
 
 .sum-text {
@@ -667,20 +663,19 @@ hr {
 }
 
 button {
-  display: inline-flex;
+  display: flex;
   padding: 12px 20px;
   justify-content: center;
   align-items: center;
   gap: 4px;
   border-radius: 999px;
   background: #008834; 
-  width: 151px;
   cursor: pointer;
   border: none;
 }
 
 button:hover {
-  display: inline-flex;
+  display: flex;
   background: #007E30;
 }
 
@@ -707,7 +702,6 @@ button:focus-visible {
 .checkout-text {
   color: #FFF;
   text-align: center;
-  width: 75px;
 }
 
 .checkout-icon {

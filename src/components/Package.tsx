@@ -24,7 +24,7 @@ function Package() {
     };
 
     return (
-      <form className="package">
+      <div className="package">
         <div className="text select-text">Select option package:</div>
         <div className="options">
             {packageOptions.map((advanced) => (
@@ -56,7 +56,7 @@ function Package() {
                 </div>
             ))}
         </div>
-      </form>
+      </div>
     );
   };
   
